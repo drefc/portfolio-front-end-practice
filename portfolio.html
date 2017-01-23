@@ -1,6 +1,5 @@
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="portfolio.css" />
 
 <!-- jQuery library -->
@@ -8,6 +7,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="portfolio.js"></script>
 
 <body>
   <nav class="navbar navbar-default">
@@ -34,14 +34,67 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="container-fluid col-md-6 col-md-offset-3" id="section-about">
-    <p> <img src="https://scontent-mia1-2.xx.fbcdn.net/v/t1.0-9/13925024_10153717513903344_9086297031941768475_n.jpg?oh=4117e7be4c8ab912d5e7f28f4b08ea03&oe=58BD70B1"
-         alt="andre" class="img-circle" width="250" align="right">
-         Electrical Engineer, web programming aficionado, trying to learn as much as I can about it. Experience working with Linux and open source hardware and software. Big tech lover.
-    </p>
+  <div class="container-fluid col-md-8 col-md-offset-2" id="section-about">
+    <img src="https://scontent-mia1-2.xx.fbcdn.net/v/t1.0-9/13925024_10153717513903344_9086297031941768475_n.jpg?oh=4117e7be4c8ab912d5e7f28f4b08ea03&oe=58BD70B1"
+        alt="andre" class="img-circle" width="250" align="right">
+    <div id="section-about-info">
+      <p> Electrical Engineer, web programming aficionado, trying to learn as much as I can about it. Experience working with Linux and open source hardware and software. Big tech lover.
+      </p>
+    </div>
+    <hr>
+    <div id="section-about-summary">
+      <p> Junior researcher - ioT enthusiast - Gym lover
+      </p>
+    </div>
   </div>
 
-  <div class="container-fluid col-md-6 col-md-offset-3" id="section-portfolio">    
+  <div class="container-fluid col-md-8 col-md-offset-2" id="section-portfolio">
+    <div id="section-portfolio-title">
+      <p> PORTFOLIO
+      </p>
+    </div>
   </div>
 
+  <div class="container-fluid col-md-8 col-md-offset-2" id="section-contact">
+    <div id="section-contact-title">
+      <p> CONTACT ME
+      </p>
+    </div>
+
+    <div class="col-xs-6" id="user-input">
+      <form>
+        <div class="form-group">
+          <input type="name" class="form-control" id="name" placeholder="Name">
+        </div>
+        <hr>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="Email Address">
+        </div>
+        <hr>
+        <div class="form-group">
+          <input type="telephone" class="form-control" id="phone" placeholder="Phone Number">
+        </div>
+        <hr>
+        <div class="form-group">
+          <textarea type="message" class="form-control" id="message" placeholder="Message", rows="8"></textarea>
+        </div>
+        <hr>
+        <button type="button">Send</button>
+      </form>
+    </div>
+
+    <div class="col-xs-6 pull-right" id="contact-text">
+      <p>
+        Would you like to exchange ideas? Please, feel free to write me and ask
+        anything about myself, my professional experience or ask for my resume.
+        We can also share gym workout routines, cinema or music, specially about rock 'n
+        roll. Specially about the Stones, ask me about the Stones!
+      </p>
+
+      <p>
+        I am very responsive, so I will probably reach out really soon :)
+      </p>
+    </div>
+
+  </div>
 </body>
